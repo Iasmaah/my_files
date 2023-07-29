@@ -1,0 +1,274 @@
+/* defining some varibales for the colors used in the file. 
+It's defined inside of a root item so its in the global scobe. 
+Varibles must start with -- and it's case senstive */
+
+:root {
+    --primary: rgb(0, 0, 0);
+	--business: #c4c4c4;
+	--personal: var(--primary);
+    --light: #EEE;
+    --grey: rgb(75, 76, 85);
+    --dark: #000000a9;
+    --danger: #ff5b57;
+	--shadow: 0 1px 3px rgba(223, 219, 219, 0.1);
+	--business-glow: 0px 0px 4px rgba(224, 224, 224, 0.75);
+	--personal-glow: 0px 0px 4px rgb(255, 248, 248);
+}
+
+/* we specifying some things so  we reset the style of all the elements as default. */
+
+*  {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* removing the defaault style of the input fields */
+input:not([type="radio"]):not([type="checkbox"]), button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+    cursor: initial;
+/*    color: var(--light)*/
+}
+/* End of Resets */
+
+body {
+    width: 400px;
+    margin: 0px auto;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+/* The computed pixel value of emunit is relative to the font size of the element being styled. 
+The computed pixel value of remunit is relative to the font size of the root (html) element. */
+
+/* stylizing the sections */
+section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+h3 {
+	color: var(--dark);
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+	color: var(--grey);
+	font-size: 1.25rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+}
+
+/* The flex property is a shorthand property for:
+
+flex-grow: how much an item will grow relative to the rest of the flexible items inside the same container
+flex-shrink: how much can an item shrink?
+flex-basis: intial size;
+*/ 
+
+.greeting .title {
+    display: flex;
+}
+
+.greeting .title input {
+	margin-left: 0.5rem;
+	flex: 1 1 0%;
+    min-width: 0;
+    color: var(--dark);
+}
+
+.greeting .title, 
+.greeting .title input {
+	color: var(--grey);
+	font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125 rem;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem; /* for the roundness of the borders edges */
+    box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+}
+
+.create-todo .options {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr); 
+    /* The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. */
+    
+    grid-gap: 1rem; 
+    /* The spaces between each column/row are called gaps. */
+
+	margin-bottom: 1.5rem;
+}
+
+.create-todo .options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);    
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    border: 2px solid var(--business);
+    box-shadow: var(--business-glow);
+}
+
+.bubble.personal {
+	border-color: var(--personal);
+	box-shadow: var(--personal-glow);
+}
+
+/* The ::after selector inserts something after the content of each selected element(s).*/
+/* this is for the animation when it is checked */
+
+/* the circle in the category selector */
+.bubble::after {
+	content: '';
+	display: block;
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+	background-color: var(--business);
+	box-shadow: var(--business-glow);
+	border-radius: 999px;
+	transition: 0.2s ease-in-out;
+}
+
+.bubble.personal::after {
+	background-color: var(--personal);
+	box-shadow: var(--personal-glow);
+}
+
+/* if item is checked, and it's beside a bubble item then change it to: */
+input:checked ~ .bubble::after{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+/* business and personal text in the category buttons */
+.create-todo .options label div {
+	color: var(--dark);
+	font-size: 1.125rem;
+	margin-top: 1rem;
+}
+
+/* Add task button */
+
+.create-todo input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    box-shadow: var(--personal-glow);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.create-todo input[type="submit"]:hover {
+    opacity: 0.80;
+}
+
+.todo-list .list {
+	margin: 1rem 0;
+}
+
+/* items in the tasks list */
+.todo-list  .todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+	margin-bottom: 1rem;
+}
+
+/* items circles */
+.todo-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+	flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+    width: 95%;
+	color: var(--dark);
+	font-size: 1.125rem;
+} 
+
+.todo-item .actions {
+	display: flex;
+	align-items: center;
+}
+
+/* edit and delete buttons */
+
+.todo-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions .edit {
+	margin-right: 0.5rem;
+	background-color: var(--primary);
+}
+
+.todo-item .actions button:hover {
+	opacity: 0.75;
+}
+
+.todo-item .actions .delete {
+	background-color: var(--danger);
+}
+
+/* if it's checked */
+.todo-item.done .todo-content input {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
