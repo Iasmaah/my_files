@@ -1,0 +1,153 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the name of the first chapter in the Quran?",
+        "choices": ["Al-Fatiha", "Al-Baqara", "Al-Imran", "Al-Nisa"],
+        "answer": "Al-Fatiha"
+      },
+      {
+        "id": 2,
+        "question": "How many chapters are there in the Quran?",
+        "choices": [ "113", "114", "112", "111"],
+        "answer": "114"
+      },
+      {
+        "id": 3,
+        "question": "Who is the author of the Quran?",
+        "choices": [ "Muhammad", "Jesus", "Allah", "Abraham"],
+        "answer": "Allah"
+      },
+      {
+        "id": 4,
+        "question": "What is the name of the holiest city in Islam?",
+        "choices": [ "Medina", "Jerusalem", "Mecca", "Qatar"],
+        "answer": "Mecca"
+      },
+      {
+        "id": 5,
+        "question": "What is the name of the holiest month in Islam?",
+        "choices": ["Ramadan", "Muharram", "Shawwal", "Dhu al-Hijjah"],
+        "answer": "Ramadan"
+      },
+      {
+        "id": 6,
+        "question": "Which is NOT one of the five pillars of Islam?",
+        "choices": ["Shahadah", "Salat"," Zakat", "Jihad"],
+        "answer": "Jihad"
+      },
+      {
+        "id": 7,
+        "question": "What is the name of the Islamic prayer?",
+        "choices": ["Salat", "Zakat", "Sawm", "Hajj"],
+        "answer": "Salat"
+      },
+      {
+        "id": 8,
+        "question": "What is the name of the Islamic tax?",
+        "choices": [ "Salat", "Zakat", "Sawm", "Hajj"],
+        "answer": "Zakat"
+      },
+      {
+        "id": 9,
+        "question": "What is the name of the Islamic fast?",
+        "choices": [ "Salat", "Zakat", "Sawm", "Hajj"],
+        "answer": "Sawm"
+      },
+      {
+        "id": 10,
+        "question": "What is the name of the Islamic pilgrimage to Mecca?",
+        "choices": ["Hajj", "Salat", "Zakat", "Sawm"],
+        "answer": "Hajj"
+      },
+      {
+        "id": 11,
+        "question": "What is the name of the Islamic greeting?",
+        "choices": [ "Wa alaikum as-salam", "Inshallah", "Alhamdulillah", "As-salamu alaykum"],
+        "answer": "As-salamu alaykum"
+      },
+      {
+        "id": 12,
+        "question": "What is the name of the Islamic call to prayer?",
+        "choices": [ "Iqamah", "Salat", "Zakat", "Adhan"],
+        "answer": "Adhan"
+      },
+      {
+        "id": 13,
+        "question": "What is the name of the Islamic niche in a mosque that indicates the direction of Mecca?",
+        "choices": [ "Minbar", "Masjid", "Quran", "Mihrab"],
+        "answer": "Mihrab"
+      },
+      {
+        "id": 14,
+        "question": "What is the name of the Islamic pulpit in a mosque from which the imam delivers the sermon?",
+        "choices": ["Minbar", "Mihrab", "Masjid", "Quran"],
+        "answer": "Minbar"
+      },
+      {
+        "id": 15,
+        "question": "What is the name of the Islamic belief in one God?",
+        "choices": ["Tawheed", "Sunnah", "Quran", "Fiqh"],
+        "answer": "Tawheed"
+      },
+    {
+      "id": 16,
+      "question": "What is the name of the Islamic month in which the Quran was revealed?",
+      "choices": [ "Muharram","Ramadan", "Shawwal", "Dhu al-Hijjah"],
+      "answer": "Ramadan"
+    },
+    {
+      "id": 17,
+      "question": "What is the name of the Islamic scholar who compiled the Quran?",
+      "choices": ["Uthman ibn Affan", "Ali ibn Abi Talib", "Abu Bakr al-Siddiq", "Umar ibn al-Khattab"],
+      "answer": "Uthman ibn Affan"
+    },
+    {
+      "id": 18,
+      "question": "What is the name of the Islamic tradition that records the sayings and actions of the Prophet Muhammad?",
+      "choices": ["Hadith", "Sunnah", "Quran", "Fiqh"],
+      "answer": "Hadith"
+    },
+    {
+      "id": 19,
+      "question": "What is the name of the Islamic law that governs the lives of Muslims?",
+      "choices": ["Hadith", "Sunnah", "Quran", "Fiqh"],
+      "answer": "Fiqh"
+    },
+    {
+      "id": 20,
+      "question": "What is the name of the Islamic mystical tradition?",
+      "choices": ["Sufism", "Tasawwuf", "Tafsir", "Aqidah"],
+      "answer": "Sufism"
+    },
+    {
+      "id": 21,
+      "question": "What is the name of the Islamic belief in the devil?",
+      "choices": ["Malaika", "Jinn", "Shaytan", "Abo Jahl"],
+      "answer": "Shaytan"
+    },
+    {
+      "id": 22,
+      "question": "What is the name of the Islamic belief in the angels?",
+      "choices": ["Malaika", "Jinn", "Shaytan", "Iblis"],
+      "answer": "Malaika"
+    },
+    {
+      "id": 23,
+      "question": "What is the name of the Islamic belief in the Day of Judgment?",
+      "choices": ["Yawm al-Qiyamah", "Yawm al-Maw'id", "Yawm al-Hasira", "Yawm al-Ba'th"],
+      "answer": "Yawm al-Qiyamah"
+    },
+    {
+      "id": 24,
+      "question": "What is the name of the Islamic belief in heaven?",
+      "choices": ["Jannah", "Jahannam", "Barzakh", "Akhirah"],
+      "answer": "Jannah"
+    },
+    {
+      "id": 25,
+      "question": "What is the name of the Islamic belief in hell?",
+      "choices": ["Jannah", "Jahannam", "Barzakh", "Akhirah"],
+      "answer": "Jahannam"
+    }
+  ]}
